@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Weather API</title>
+  </head>
+  
+  <body>
+    <div class="center-container">
+
+      <div class="top-header">
+        <h1>The World's Simplest Weather App</h1>
+      </div>
+
+      <form id="form">
+
+        <input id="my-input" type="text" placeholder="Search for a city" autocomplete="off">
+        <button class="button" type="submit">Search</button>
+        <br>
+        <div id="user-message"></div>
+        <br>
+      </form>
+
+      <div id="hidden-box">
+
+        <div class="container">
+          <div class="display-weather">
+
+            <h2 id="city-name"></h2>
+            <br>
+            <h3 id="numeric-temp"></h3>
+            <img id="icon">
+            <h3 id="weather-main"></h3>
+            <br>
+            <h3 id="weather-details"></h3>
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
